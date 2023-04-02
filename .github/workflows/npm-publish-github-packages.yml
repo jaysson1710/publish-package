@@ -28,9 +28,8 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       packages: write
-      id-token: write
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -38,6 +37,7 @@ jobs:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
           always-auth: true
+          token: ${{secrets.GITHUB_TOKEN}}
       - run: npm ci
         working-directory: 'sample-packages/npm/'
       - run: npm publish
