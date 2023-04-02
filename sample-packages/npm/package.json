@@ -1,6 +1,6 @@
 {
   "your": "json config here",
-  "name": "npm",
+  "name": "npm-tst",
   "version": "1.0.0",
   "description": "test npm new project",
   "main": "index.js",
