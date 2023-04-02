@@ -6,7 +6,10 @@ name: Node.js Package
 on:
   push:
     branches: [ "main" ]
-    paths: 'sample-packages/npm/*'
+    paths: 
+     - 'sample-packages/npm/*'
+     - '.github/workflows/npm-publish-github-packages.yml'
+    
   release:
     types: [created]
   
