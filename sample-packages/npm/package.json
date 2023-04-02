@@ -1,3 +1,12 @@
 {
-  "your": "json config here"
+  "your": "json config here",
+  "name": "npm",
+  "version": "1.0.0",
+  "description": "test npm new project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }

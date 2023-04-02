@@ -21,8 +21,8 @@ jobs:
           node-version: 16
       - run: npm ci
         working-directory:  'sample-packages/npm/'
-      - run: npm test
-        working-directory: 'sample-packages/npm/'
+      # - run: npm test
+      #   working-directory: 'sample-packages/npm/'
 
   publish-gpr:
     needs: build
