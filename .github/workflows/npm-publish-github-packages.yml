@@ -42,6 +42,5 @@ jobs:
       - run: npm ci
         working-directory: 'sample-packages/npm/'
       - run: npm publish
-        working-directory: 'sample-packages/npm/'
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
